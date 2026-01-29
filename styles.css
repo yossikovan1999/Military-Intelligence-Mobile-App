@@ -1,0 +1,368 @@
+body {
+  background-color: #0f0f13;
+  color: #00d533;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #0e0a16;
+}
+
+nav h1 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.logo svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background-color: #00d533;
+  border-radius: 50%;
+  position: relative;
+}
+
+.logo:hover {
+  animation: spin-logo;
+  animation-duration: 0.7s;
+  animation-iteration-count: 0.5s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-timing-function:ease-in-out;
+}
+
+.header-btn {
+  font-size: 0.7rem;
+  background-color: none;
+  border: solid 2px #00d533;
+  border-radius: 25px;
+  padding: 6px 5px;
+  background: none;
+  color: #00d533;
+  cursor: pointer;
+}
+
+.pulse-circle {
+  padding: 0;
+  margin: 0;
+  opacity: 50%;
+  animation: pulse-circle;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: steps(2, jump-end);
+}
+
+.hero-section {
+  padding: 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #999999;
+  border-radius: 25px;
+  background-color: #1a1229;
+  border: #333 2px solid;
+  transition: border 0.3s ease-in-out;
+}
+
+.hero-section:hover{
+    border:#00d533 2px solid;
+}
+
+.hero-container {
+  flex: 1;
+}
+
+.hero-right h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-right p {
+  padding: 0;
+  margin: 0;
+  font-size: 0.5rem;
+  color: #999999;
+}
+
+main .btns-section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+main .btns-section button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.2rem;
+  background-color: #1a1229;
+  border: 2px #555555 solid;
+  border-radius: 25px;
+  color: white;
+  padding: 15px 10px;
+  cursor: pointer;
+  font-weight: 100;
+  transition: all 0.3s ease-in-out;
+}
+
+main .btns-section button:hover{
+    border: 2px #00d533 solid;
+    background-color: rgb(0, 213, 51, 0.3);
+    transform: translateY(-5px);
+}
+
+.cards-section {
+  padding-bottom: 2rem;
+}
+
+.card {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: #1a1229;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  border: 3px #00d533 solid;
+  transform: rotate(2deg);
+}
+
+
+.card .card-header {
+  font-size: 0.6rem;
+  color: #999999;
+}
+
+.card .card-header button {
+  font-size: 0.6rem;
+  padding: 5px 7px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #9b9b9b;
+}
+
+.high-btn {
+  color: #f3bc23;
+  border: #f3bc23 2px solid;
+  background-color: rgb(243, 188, 35, 0.4);
+}
+
+.critical-btn {
+  color: #951e47;
+  border: #951e47 2px solid;
+  background-color: rgb(149, 30, 71, 0.4);
+}
+
+.medium-btn {
+  color: #00d533;
+  border: #00d533 2px solid;
+  background-color: rgb(0, 213, 51, 0.3);
+}
+
+.card:nth-child(even) {
+  border-left: 3px solid #f3bc23;
+}
+
+.card:nth-child(odd) {
+  border-left: 3px solid #00d533;
+}
+
+.card-bottom {
+  gap: 0.5rem;
+  font-size: 0.7rem;
+}
+
+.meassure {
+  background-color: #555555;
+  width: 100%;
+  height: 5px;
+  border-radius: 25px;
+  position: relative;
+}
+
+.sixty-five-percent {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65%;
+  background-color: #00d533;
+  border-radius: 25px;
+}
+
+.fifteen-percent {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15%;
+  background-color: #00d533;
+  border-radius: 25px;
+}
+
+.fourty-percent {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  background-color: #00d533;
+  border-radius: 25px;
+}
+
+.eighty-percent {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  background-color: #00d533;
+  border-radius: 25px;
+}
+
+.bottom-page-button-section {
+  width: 100%;
+}
+
+.bottom-page-button-section .bottom-button {
+  position: relative;
+  width: 100%;
+  color: #951e47;
+  border: #951e47 2px solid;
+  background-color: rgb(149, 30, 71, 0.4);
+  font-size: 1.3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.3s ease-in-out;
+}
+
+.bottom-page-button-section .bottom-button:hover{
+    scale: 1.04;
+}
+
+.bottom-page-button-section .bottom-button svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #951e47;
+  background-color: #1a1229;
+}
+
+.icon-section {
+  gap: 0.3rem;
+  color: #5d5d65;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-section {
+    fill: #00d533;
+}
+
+.icon-section:hover{
+    color: #00d533;
+    transform: translateY(-5px);
+    fill: #00d533;
+}
+
+.green-color{
+    color: #00d533;
+}
+
+@keyframes pulse-circle {
+  0% {
+  }
+  100% {
+    transform: scale(3);
+    opacity: 100%;
+  }
+}
+
+@keyframes spin-logo {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+    box-shadow:0 0 20px greenyellow;
+  }
+}
+
+.radar {
+  overflow: hidden;
+  width: 248px;
+  height: 248px;
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 1px hsla(0, 0%, 0%, 0.5),
+    inset 0 0 0 1px hsla(0, 0%, 100%, 0.15);
+  background:
+    repeating-radial-gradient(
+      transparent 0 23px,
+      #287a33 24px 26px,
+      #0000 27px
+    ),
+    linear-gradient(transparent 49.75%, #0e4c42 0 50.25%, transparent 0) 50%
+      no-repeat,
+    linear-gradient(90deg, transparent 49.75%, #0e4c42 0 50.25%, transparent 0)
+      50% no-repeat,
+    linear-gradient(#333, #111);
+  background-size:
+    100%,
+    218px 218px,
+    218px 218px,
+    100%;
+}
+.sweep {
+  box-sizing: border-box;
+  top: 16px;
+  left: 16px;
+  border-right: solid 1px hsla(145, 50%, 40%, 0.3);
+  width: 108px;
+  height: 108px;
+  border-radius: 100% 0 0 0;
+  transform-origin: 100% 100%;
+  background: linear-gradient(
+    50deg,
+    rgba(34, 34, 34, 0) 56%,
+    hsla(145, 50%, 40%, 1)
+  );
+  animation: sweep 5s infinite linear;
+}
+@keyframes sweep {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,170 @@
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+}
+
+.col-1 {
+    grid-column: span 1;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.col-3 {
+    grid-column: span 3;
+}
+
+.col-4 {
+    grid-column: span 4;
+}
+
+.col-6 {
+    grid-column: span 6;
+}
+
+.col-8 {
+    grid-column: span 8;
+}
+
+.col-9 {
+    grid-column: span 8;
+}
+
+.col-10 {
+    grid-column: span 10;
+}
+
+.col-12 {
+    grid-column: span 12;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.justify-content-start {
+    justify-content: start;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+
+@media screen and (min-width : 768px) {
+    .col-md-1 {
+        grid-column: span 1;
+    }
+
+    .col-md-2 {
+        grid-column: span 2;
+    }
+
+    .col-md-3 {
+        grid-column: span 3;
+    }
+
+    .col-md-4 {
+        grid-column: span 4;
+    }
+
+    .col-md-6 {
+        grid-column: span 6;
+
+    }
+
+    .col-md-8 {
+        grid-column: span 8;
+    }
+
+    .col-md-9 {
+        grid-column: span 9;
+    }
+
+    .col-md-10 {
+        grid-column: span 10;
+    }
+
+    .col-md-12 {
+        grid-column: span 12;
+    }
+
+    .justify-content-md-end {
+        justify-content: end;
+    }
+
+
+    .flex-md-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex-md-col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .align-items-md-center {
+        align-items: center;
+    }
+
+    .justify-content-md-center {
+        justify-content: center;
+    }
+
+    .justify-content-md-end {
+        justify-content: end;
+    }
+
+    .space-md-between {
+        justify-content: space-between;
+    }
+
+    .space-md-around {
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (max-width : 768px) {
+
+    .text-align-sm-center {
+        text-align: center;
+    }
+}
